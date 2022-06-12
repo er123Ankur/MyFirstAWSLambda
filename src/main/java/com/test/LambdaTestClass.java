@@ -10,6 +10,7 @@ public class LambdaTestClass {
 	public String handleRequest(String input, Context context) {
         context.getLogger().log("Input: " + input);
         lts=new LambdaTestServiceImpl();
+	//dummy
         lts.addition(1, 2);
 		//test
         return "Hello World - add=" + lts.addition(1, 2)+",input String="+input;

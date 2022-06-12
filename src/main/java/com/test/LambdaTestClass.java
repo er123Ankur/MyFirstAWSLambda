@@ -11,6 +11,7 @@ public class LambdaTestClass {
         context.getLogger().log("Input: " + input);
         lts=new LambdaTestServiceImpl();
         lts.addition(1, 2);
+		
         return "Hello World - add=" + lts.addition(1, 2)+",input String="+input;
     }
 	
